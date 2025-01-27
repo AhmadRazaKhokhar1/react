@@ -12,10 +12,10 @@
   "scripts": {
     "copyright": "node scripts/copyright.js",
     "hash": "scripts/hash.sh",
-    "start": "yarn workspace playground run start",
+    "start": "node init && yarn workspace playground run start",
     "next": "yarn workspace playground run dev",
-    "build": "yarn workspaces run build",
-    "dev": "cd apps/playground && yarn dev",
+    "build": "node init && yarn workspaces run build",
+    "dev": "node init && cd apps/playground && yarn dev",
     "test": "yarn workspaces run test",
     "snap": "yarn workspace babel-plugin-react-compiler run snap",
     "snap:build": "yarn workspace snap run build",
