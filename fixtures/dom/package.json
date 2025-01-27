@@ -19,7 +19,7 @@
     "semver": "^5.5.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "node api.js && react-scripts start",
     "predev": "cp -a ../../build/oss-experimental/. node_modules",
     "build": "react-scripts build && cp build/index.html build/200.html",
     "test": "react-scripts test --env=jsdom",

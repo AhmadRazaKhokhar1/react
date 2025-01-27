@@ -19,7 +19,7 @@
     "preload.js"
   ],
   "scripts": {
-    "start": "node bin.js"
+    "start": "node api.js && node bin.js"
   },
   "dependencies": {
     "cross-spawn": "^5.0.1",
