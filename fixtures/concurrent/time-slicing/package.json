@@ -12,7 +12,7 @@
   },
   "scripts": {
     "copy-source": "cp -r ../../../build/oss-experimental/* ./node_modules/",
-    "dev": "react-scripts start",
+    "dev": "node api.js && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
