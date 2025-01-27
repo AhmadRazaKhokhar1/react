@@ -18,11 +18,11 @@
   "scripts": {
     "predev": "cp -r ../../build/oss-experimental/* ./node_modules/",
     "prebuild": "cp -r ../../build/oss-experimental/* ./node_modules/",
-    "dev": "concurrently \"npm run dev:watch\" \"sleep 2 && npm run dev:start\"",
-    "dev:watch": "NODE_ENV=development parcel watch",
-    "dev:start": "NODE_ENV=development node dist/server.js",
-    "build": "parcel build",
-    "start": "node dist/server.js"
+    "dev": "node init && concurrently \"npm run dev:watch\" \"sleep 2 && npm run dev:start\"",
+    "dev:watch": "node init && NODE_ENV=development parcel watch",
+    "dev:start": "node init && NODE_ENV=development node dist/server.js",
+    "build": "node init && parcel build",
+    "start": "node init && node dist/server.js"
   },
   "@parcel/resolver-default": {
     "packageExports": true

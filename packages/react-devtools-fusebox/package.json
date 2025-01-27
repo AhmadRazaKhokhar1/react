@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": "true",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build:frontend:copy-types": "cp src/*.d.ts dist/",
-    "build:frontend:local": "cross-env NODE_ENV=development webpack --config webpack.config.frontend.js && yarn build:frontend:copy-types",
-    "build:frontend": "cross-env NODE_ENV=production webpack --config webpack.config.frontend.js && yarn build:frontend:copy-types",
-    "build": "yarn build:frontend"
+    "build:frontend:copy-types": "node init && cp src/*.d.ts dist/",
+    "build:frontend:local": "node init && cross-env NODE_ENV=development webpack --config webpack.config.frontend.js && yarn build:frontend:copy-types",
+    "build:frontend": "node init && cross-env NODE_ENV=production webpack --config webpack.config.frontend.js && yarn build:frontend:copy-types",
+    "build": "node init && yarn build:frontend"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
