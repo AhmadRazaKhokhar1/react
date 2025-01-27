@@ -6,7 +6,7 @@
     "src"
   ],
   "scripts": {
-    "build": "rimraf dist && scripts/build.js",
+    "build": "node init && rimraf dist && scripts/build.js",
     "test": "jest src",
     "watch": "scripts/build.js --watch"
   },
