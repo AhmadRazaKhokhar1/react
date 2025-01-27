@@ -12,7 +12,7 @@
     "react-motion": "^0.5.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "node api.js && react-scripts start",
     "build": "react-scripts build"
   }
 }
