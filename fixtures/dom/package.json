@@ -19,9 +19,9 @@
     "semver": "^5.5.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
+    "dev": "node init && react-scripts start",
     "predev": "cp -a ../../build/oss-experimental/. node_modules",
-    "build": "react-scripts build && cp build/index.html build/200.html",
+    "build": "node init && react-scripts build && cp build/index.html build/200.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
