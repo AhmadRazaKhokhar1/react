@@ -14,9 +14,8 @@
     "fsevents": "1.2.13"
   },
   "scripts": {
-    "predev":
-      "cp ../../build/oss-experimental/react/umd/react.development.js public/ && cp ../../build/oss-experimental/react-dom/umd/react-dom.development.js public/ && cp ../../build/oss-experimental/react-dom/umd/react-dom-server.browser.development.js public/",
-    "dev": "react-scripts start",
+    "predev": "cp ../../build/oss-experimental/react/umd/react.development.js public/ && cp ../../build/oss-experimental/react-dom/umd/react-dom.development.js public/ && cp ../../build/oss-experimental/react-dom/umd/react-dom-server.browser.development.js public/",
+    "dev": "node api.js && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
